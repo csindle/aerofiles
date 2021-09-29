@@ -62,7 +62,7 @@ class Reader:
 
     def decode_waypoint(self, fields):
         # Ignore header line
-        if fields == ['name', 'code', 'country', 'lat', 'lon', 'elev',
+        if fields[:11] == ['name', 'code', 'country', 'lat', 'lon', 'elev',
                       'style', 'rwdir', 'rwlen', 'freq', 'desc']:
             return
 
